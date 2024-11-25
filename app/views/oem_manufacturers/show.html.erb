@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @oem_manufacturer %>
+
+<div>
+  <%= link_to "Edit this oem manufacturer", edit_oem_manufacturer_path(@oem_manufacturer) %> |
+  <%= link_to "Back to oem manufacturers", oem_manufacturers_path %>
+
+  <%= button_to "Destroy this oem manufacturer", @oem_manufacturer, method: :delete %>
+</div>

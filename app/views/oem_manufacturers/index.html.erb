@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Oem manufacturers" %>
+
+<h1>Oem manufacturers</h1>
+
+<div id="oem_manufacturers">
+  <% @oem_manufacturers.each do |oem_manufacturer| %>
+    <%= render oem_manufacturer %>
+    <p>
+      <%= link_to "Show this oem manufacturer", oem_manufacturer %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New oem manufacturer", new_oem_manufacturer_path %>

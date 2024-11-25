@@ -1,0 +1,2 @@
+class GorillaGlass < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+module GorillaGlassesHelper
+end

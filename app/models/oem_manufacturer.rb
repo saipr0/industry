@@ -1,0 +1,2 @@
+class OemManufacturer < ApplicationRecord
+end

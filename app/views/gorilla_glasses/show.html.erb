@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @gorilla_glass %>
+
+<div>
+  <%= link_to "Edit this gorilla glass", edit_gorilla_glass_path(@gorilla_glass) %> |
+  <%= link_to "Back to gorilla glasses", gorilla_glasses_path %>
+
+  <%= button_to "Destroy this gorilla glass", @gorilla_glass, method: :delete %>
+</div>

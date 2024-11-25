@@ -1,0 +1,37 @@
+<%= form_with(model: gorilla_glass) do |form| %>
+  <% if gorilla_glass.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(gorilla_glass.errors.count, "error") %> prohibited this gorilla_glass from being saved:</h2>
+
+      <ul>
+        <% gorilla_glass.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :partID, style: "display: block" %>
+    <%= form.text_field :partID %>
+  </div>
+
+  <div>
+    <%= form.label :materialType, style: "display: block" %>
+    <%= form.text_field :materialType %>
+  </div>
+
+  <div>
+    <%= form.label :dimensions, style: "display: block" %>
+    <%= form.text_field :dimensions %>
+  </div>
+
+  <div>
+    <%= form.label :qualityRating, style: "display: block" %>
+    <%= form.text_field :qualityRating %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

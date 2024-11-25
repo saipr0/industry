@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Gorilla glasses" %>
+
+<h1>Gorilla glasses</h1>
+
+<div id="gorilla_glasses">
+  <% @gorilla_glasses.each do |gorilla_glass| %>
+    <%= render gorilla_glass %>
+    <p>
+      <%= link_to "Show this gorilla glass", gorilla_glass %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New gorilla glass", new_gorilla_glass_path %>
