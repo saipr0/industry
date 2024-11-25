@@ -9,5 +9,5 @@ test:
   adapter: test
 
 production:
-  adapter: test
+  adapter: async
 
